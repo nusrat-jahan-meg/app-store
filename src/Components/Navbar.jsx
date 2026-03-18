@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logo from '../assets/logo.png';
 import { Github } from 'lucide-react';
 import { FaGithub, FaGithubAlt } from "react-icons/fa";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar  bg-base-100 shadow-sm">
+            <div className="navbar p-5  bg-base-100 shadow-sm sticky ">
   <div className="navbar-start gap-2">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="  lg:hidden">
@@ -16,9 +16,21 @@ const Navbar = () => {
         tabIndex="-1"
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
      
-       <Link to={"/"}>Home</Link>
-        <Link to={"/apps"}>App</Link>
-         <Link to={"/installation"}>Installation</Link>
+     <NavLink to={"/"} className={({ isActive }) =>
+    isActive
+      ? "text-purple-600 font-bold"
+      : "text-gray-700"
+  } >Home</NavLink>
+        <NavLink to={"/apps"} className={({ isActive }) =>
+    isActive
+      ? "text-purple-600 font-bold"
+      : "text-gray-700"
+  }  >App</NavLink>  
+         <NavLink to={"/installation"} className={({ isActive }) =>
+    isActive
+      ? "text-purple-600 font-bold"
+      : "text-gray-700"
+  }  >Installation</NavLink>
       </ul>
     </div>
     <div className='items-center'>
@@ -32,9 +44,22 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex ">
     <ul className="menu menu-horizontal px-5 gap-5">
-      <Link to={"/"}>Home</Link>
-        <Link to={"/apps"}>App</Link>
-         <Link to={"/installation"}>Installation</Link>
+      <NavLink to={"/"} className={({ isActive }) =>
+    isActive
+      ? "text-purple-600 font-bold"
+      : "text-gray-700"
+  }  >Home</NavLink>
+        <NavLink className={({ isActive }) =>
+    isActive
+      ? "text-purple-600 font-bold"
+      : "text-gray-700"
+  }  to={"/apps"}>App</NavLink>
+         <NavLink 
+          className={({ isActive }) =>
+    isActive
+      ? "text-purple-600 font-bold"
+      : "text-gray-700"
+  }  to={"/installation"}>Installation</NavLink>
     </ul>
   </div>
   <div className="navbar-end">
