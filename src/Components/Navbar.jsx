@@ -6,7 +6,7 @@ import { FaGithub, FaGithubAlt } from "react-icons/fa";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar p-5  bg-base-100 shadow-sm sticky ">
+            <div className="navbar p-5  bg-base-100 shadow-sm ">
   <div className="navbar-start gap-2">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="  lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = () => {
     <div className='items-center'>
 
          <span className=" text-xl flex items-center gap-1">
-         <img src={logo} alt="" srcset="" className='h-6 w-6 ' />  
+         <img src={logo} alt="" srcSet="" className='h-6 w-6 ' />  
          <h2 className='text-purple-700 text-sm'>App Store </h2>
            </span>
     </div>

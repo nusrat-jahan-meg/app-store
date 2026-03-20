@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "title": "WhatsApp",
+    "companyName": "Meta",
+    "image": "https://img.icons8.com/color/96/whatsapp.png",
+    "description": "Chat and call your friends instantly.",
+    "size": 80,
+    "reviews": 20,
+    "ratingAvg": 4.5,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Facebook",
+    "companyName": "Meta",
+    "image": "https://img.icons8.com/color/96/facebook.png",
+    "description": "Connect with friends and the world.",
+    "size": 120,
+    "reviews": 18,
+    "ratingAvg": 4.2,
+    "downloads": 45,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 12200 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Instagram",
+    "companyName": "Meta",
+    "image": "https://img.icons8.com/color/96/instagram-new.png",
+    "description": "Share photos and videos.",
+    "size": 100,
+    "reviews": 22,
+    "ratingAvg": 4.6,
+    "downloads": 60,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Twitter",
+    "companyName": "X Corp",
+    "image": "https://img.icons8.com/color/96/twitter.png",
+    "description": "Join conversations worldwide.",
+    "size": 90,
+    "reviews": 14,
+    "ratingAvg": 4.1,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 8900 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "YouTube",
+    "companyName": "Google",
+    "image": "https://img.icons8.com/color/96/youtube-play.png",
+    "description": "Watch and share videos.",
+    "size": 150,
+    "reviews": 30,
+    "ratingAvg": 4.7,
+    "downloads": 80,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 22900 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Messenger",
+    "companyName": "Meta",
+    "image": "https://img.icons8.com/color/96/facebook-messenger.png",
+    "description": "Chat instantly with friends.",
+    "size": 110,
+    "reviews": 170,
+    "ratingAvg": 4.3,
+    "downloads": 42,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 12100 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Snapchat",
+    "companyName": "Snap Inc",
+    "image": "https://img.icons8.com/color/96/snapchat.png",
+    "description": "Share moments instantly.",
+    "size": 95,
+    "reviews": 12,
+    "ratingAvg": 4.0,
+    "downloads": 28,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 6700 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Telegram",
+    "companyName": "Telegram LLC",
+    "image": "https://img.icons8.com/color/96/telegram-app.png",
+    "description": "Fast and secure messaging.",
+    "size": 85,
+    "reviews": 21,
+    "ratingAvg": 4.6,
+    "downloads": 55,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 15650 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "image": "https://img.icons8.com/color/96/tiktok.png",
+    "description": "Short video entertainment.",
+    "size": 130,
+    "reviews": 26,
+    "ratingAvg": 4.5,
+    "downloads": 70,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 19600 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Spotify",
+    "companyName": "Spotify Ltd",
+    "image": "https://img.icons8.com/color/96/spotify.png",
+    "description": "Stream music anytime.",
+    "size": 140,
+    "reviews": 19,
+    "ratingAvg": 4.4,
+    "downloads": 48,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 13800 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Netflix",
+    "companyName": "Netflix Inc",
+    "image": "https://img.icons8.com/color/96/netflix.png",
+    "description": "Watch movies and shows.",
+    "size": 200,
+    "reviews": 25,
+    "ratingAvg": 4.6,
+    "downloads": 62,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 19000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Google Maps",
+    "companyName": "Google",
+    "image": "https://img.icons8.com/color/96/google-maps.png",
+    "description": "Navigate and explore.",
+    "size": 100,
+    "reviews": 21,
+    "ratingAvg": 4.5,
+    "downloads": 60,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 15900 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Uber",
+    "companyName": "Uber Technologies",
+    "image": "https://img.icons8.com/color/96/uber.png",
+    "description": "Book rides easily.",
+    "size": 110,
+    "reviews": 15,
+    "ratingAvg": 4.2,
+    "downloads": 35,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 10400 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Zoom",
+    "companyName": "Zoom Video",
+    "image": "https://img.icons8.com/color/96/zoom.png",
+    "description": "Video meetings and calls.",
+    "size": 90,
+    "reviews": 16,
+    "ratingAvg": 4.3,
+    "downloads": 370,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 11200 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Canva",
+    "companyName": "Canva Pty",
+    "image": "https://img.icons8.com/color/96/canva.png",
+    "description": "Design anything easily.",
+    "size": 120,
+    "reviews": 23,
+    "ratingAvg": 4.7,
+    "downloads": 650,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 17650 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Google Drive",
+    "companyName": "Google",
+    "image": "https://img.icons8.com/color/96/google-drive.png",
+    "description": "Store files in cloud.",
+    "size": 90,
+    "reviews": 18,
+    "ratingAvg": 4.4,
+    "downloads": 50,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 12900 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Gmail",
+    "companyName": "Google",
+    "image": "https://img.icons8.com/color/96/gmail.png",
+    "description": "Send and receive emails.",
+    "size": 70,
+    "reviews": 22,
+    "ratingAvg": 4.5,
+    "downloads": 62,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 16400 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "LinkedIn",
+    "companyName": "Microsoft",
+    "image": "https://img.icons8.com/color/96/linkedin.png",
+    "description": "Professional networking.",
+    "size": 95,
+    "reviews": 14,
+    "ratingAvg": 4.3,
+    "downloads": 30,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 10200 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Pinterest",
+    "companyName": "Pinterest Inc",
+    "image": "https://img.icons8.com/color/96/pinterest.png",
+    "description": "Discover ideas and inspiration.",
+    "size": 85,
+    "reviews": 13,
+    "ratingAvg": 4.2,
+    "downloads":28,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Adobe Lightroom",
+    "companyName": "Adobe",
+    "image": "https://img.icons8.com/color/96/adobe-lightroom.png",
+    "description": "Edit photos professionally.",
+    "size": 150,
+    "reviews": 17,
+    "ratingAvg": 4.6,
+    "downloads": 45,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 11900 }
+    ]
+  }
+]
