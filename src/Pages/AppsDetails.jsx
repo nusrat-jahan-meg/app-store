@@ -1,17 +1,15 @@
 import {  Download,  Star, ThumbsUp } from 'lucide-react';
-import React from 'react';
+
 import { useLoaderData, useParams } from 'react-router';
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
-
-
-
-
+import { addToStoreDB } from '../Utilites/addToDB';
 
 
 const AppsDetails = () => {
     const apps = useLoaderData();
     const {id} = useParams();
     const appId = parseInt(id);
+
     console.log(apps, "id",id)
 
     const singleApps = apps.find(app=>app.id === appId);
@@ -28,10 +26,11 @@ const AppsDetails = () => {
 console.log(chartData);
 
 
-const handleInstallation = () => {
-alert("add this")
-}
+const handleInstallation = (id) => {
 
+addToStoreDB(id);
+
+}
 
 
     return (
@@ -69,7 +68,7 @@ alert("add this")
                    </div>
                    
                     </div>
-                    <button onClick={()=>handleInstallation() } className='btn btn-primary'>Install Now ({size})</button>
+                    <button onClick={()=>handleInstallation(appId) } className='btn btn-primary hover:bg-purple-600'>Install Now ({size})</button>
                 </div>
      </div>        
         </div>
