@@ -12,7 +12,7 @@ const AllApps = () => {
   );
 
   return (
-    <div className="p-24">
+    <div className="p-4">
       <h1 className="text-3xl font-bold text-center">All Apps</h1>
       <p className="text-center text-gray-500 text-sm">Explore All Apps on the Market developed by us .we code for Millions.</p>
 

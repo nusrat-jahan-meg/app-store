@@ -5,7 +5,7 @@ import heroimg from "../assets/hero1.png"
 const Hero = () => {
     return (
         <div>
-          <div className="hero bg-base-200 min-h-screen mx-auto text-center items-center p-24">
+          <div className="hero bg-base-200 min-h-screen mx-auto text-center items-center p-4">
   <div className="hero-content flex-col lg:flex-row-reverse ">
    <div>
     <h2 className='text-4xl font-bold '>We build <br />
