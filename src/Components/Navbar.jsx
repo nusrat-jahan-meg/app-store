@@ -37,7 +37,7 @@ const Navbar = () => {
 
          <span className=" text-xl flex items-center gap-1">
          <img src={logo} alt="" srcSet="" className='h-6 w-6 ' />  
-         <h2 className='text-purple-700 text-sm'>App Store </h2>
+         <h2 className='text-purple-700 text-sm font-bold'>App Store </h2>
            </span>
     </div>
   

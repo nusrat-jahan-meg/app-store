@@ -1,15 +1,38 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../Components/AppCard";
+import Loading from "./Loading";
+import ErrorMassage from "./ErrorMassage";
+
+
+
 
 
 const AllApps = () => {
   const appsData = useLoaderData() ; 
   const [search, setSearch] = useState("");
+  const [loading,setLoading] =useState(true);
+   const [filteredApps, setFilteredApps] = useState([]);
 
-  const filteredApps = appsData.filter(app =>
-    app.title?.toLowerCase().includes(search.toLowerCase())
-  );
+  // const filteredApps = appsData.filter(app =>
+  //   app.title?.toLowerCase().includes(search.toLowerCase())
+  // );
+    useEffect(() => {
+    if (appsData) {
+      const filtered = appsData.filter(app =>
+        app.title?.toLowerCase().includes(search.toLowerCase())
+      );
+      setFilteredApps(filtered);
+      setLoading(false);
+    }
+  }, [appsData, search]);
+   if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <span className="loading loading-bars loading-xl"></span>
+      </div>
+    );
+  }
 
   return (
     <div className="p-4">
@@ -27,7 +50,8 @@ const AllApps = () => {
       </div>
 
       {filteredApps.length === 0 ? (
-        <p className="text-red-500 text-center mt-10">No App Found</p>
+
+       <p  className='text-center text-gray-500'> No Apps  Found </p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredApps.map((app) => (

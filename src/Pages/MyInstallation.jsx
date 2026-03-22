@@ -5,11 +5,13 @@ import { Download, Star, ThumbsUp } from 'lucide-react';
 import { toast } from 'react-toastify';
 import { ToastBar } from 'react-hot-toast';
 
+
+
 const MyInstallation = () => {
     const apps = useLoaderData();
     const[myInstallation ,setMyInstallation] =useState([]);
     console.log(apps)
-// outsider 
+ 
     useEffect (()=> {
     const storeAppsData =getStoreApps();
     const convertedStoredApps = storeAppsData.map(id=> parseInt(id))
@@ -18,6 +20,18 @@ const MyInstallation = () => {
     setMyInstallation(filteredApps);
 
     },[apps])
+
+
+    const handleSortBySize = (type)=> {
+      const sortedApps = [...myInstallation].sort((a,b)=> {
+        if (type === "high") {
+          return b.downloads -a.downloads
+        } else{
+          return a.downloads- b.downloads;
+        }
+      })
+      setMyInstallation(sortedApps);
+    }
 
 const handleUninstall = (id)=> {
 removeAppStore(id);
@@ -33,9 +47,17 @@ setMyInstallation(prev => prev.filter(app => app.id !== id))
             <p className='text-sm text-gray-500 text-center '>Explore All Trending Apps on the Market developed by us</p>
 
         <div>
+    
           <div className='flex justify-between p-3'>
               <h2 className='font-semibold'>{myInstallation.length} Apps Found</h2>
-            <button className='btn '>Sort By Size</button>
+     <div className="dropdown dropdown-center ">
+  <div tabIndex={0} role="button" className="btn ">Sort By Size  ⬇️</div>
+  <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1  w-52 p-2 shadow-sm">
+    <li><button onClick={()=> handleSortBySize("high")} className='hover:text-purple-700 '>
+      High-Low</button></li>
+    <li><button onClick={()=> handleSortBySize("low")}className='hover:text-purple-700' >Low-High</button></li>
+  </ul>
+</div>
           </div>
           <div>
             <div className='shadow p-4  '>

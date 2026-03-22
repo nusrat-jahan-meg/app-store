@@ -19,13 +19,15 @@ const addToStoreDB =(id) => {
 
         
        toast("This app already exit")
+       return false;
     }
     else {
         storeAppsData.push(id);
         const app =JSON.stringify(storeAppsData);
         localStorage.setItem("installedApps",app);
         toast.info("App installed successfully!");
-        console.log(storeAppsData);
+        return true;
+        // console.log(storeAppsData);
     }
 }
 

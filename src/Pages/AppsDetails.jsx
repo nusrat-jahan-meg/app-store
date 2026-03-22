@@ -2,14 +2,15 @@ import {  Download,  Star, ThumbsUp } from 'lucide-react';
 
 import { useLoaderData, useParams } from 'react-router';
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
-import { addToStoreDB } from '../Utilites/addToDB';
+import { addToStoreDB, getStoreApps } from '../Utilites/addToDB';
+import { useEffect, useState } from 'react';
 
 
 const AppsDetails = () => {
     const apps = useLoaderData();
     const {id} = useParams();
     const appId = parseInt(id);
-
+   const [installed, setInstalled] = useState(false);
     console.log(apps, "id",id)
 
     const singleApps = apps.find(app=>app.id === appId);
@@ -28,10 +29,19 @@ console.log(chartData);
 
 const handleInstallation = (id) => {
 
-addToStoreDB(id);
+const isInstalled =  addToStoreDB(id);
+if (isInstalled) {
+  setInstalled(true);
+}
 
 }
 
+useEffect (()=> {
+  const storedApps =getStoreApps();
+  if (storedApps.includes(appId)) {
+    setInstalled(true);
+  }
+},[appId])
 
     return (
     <div>
@@ -68,7 +78,9 @@ addToStoreDB(id);
                    </div>
                    
                     </div>
-                    <button onClick={()=>handleInstallation(appId) } className='btn btn-primary hover:bg-purple-600'>Install Now ({size})</button>
+                    <button disabled= {installed} onClick={()=>handleInstallation(appId) } 
+                    className={`btn ${installed ? "bg-gray-400 text-gray-200" : "btn-primary"}`}> {installed ? "Installed" :`Install Now (${size})`}   </button>
+    
                 </div>
      </div>        
         </div>
