@@ -7,22 +7,9 @@ App Store is a modern React-based web application where users can explore trendi
 
 This project demonstrates core frontend development concepts like state management, routing, local storage handling, and dynamic UI updates.
 
----
 
-## ✨ Features
 
-* 📦 View all available apps
-* 📥 Install & uninstall apps
-* 🔍 Filter and search functionality
-* 📊 Sort apps by:
 
-  * Size
-  * Download Count (High → Low / Low → High)
-* 💾 Data persistence using Local Storage
-* 🔔 Toast notifications for user actions
-* ⚡ Fast and responsive UI
-
----
 
 ## 🛠️ Technologies Used
 
