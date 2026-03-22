@@ -13,10 +13,10 @@ const navigate =useNavigate();
     return (
         <div onClick={()=>handleCard() } className='mx-auto p-6'>
 <div className="card bg-base-100  shadow-sm">
-  <figure>
+  <figure className='h-40 flex items-center justify-center bg-gray-100'>
     <img
       src={app.image}
-      alt={app.title} />
+      alt={app.title}  className="h-24 object-contain" />
   </figure>
   <div className="card-body">
   
